@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>이대목동병원 개방형실험실</title>
+
+	<script src="../static/js/jquery-3.3.1.min.js"></script>
+	<script src="../static/js/jquery-ui.min.js"></script>
+	<script src="../static/js/common.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../static/css/base.css"> <!-- reset -->
+	<link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" media="all and (max-width:1280px)" type="text/css" href="../static/css/mobile.css"> <!-- 반응형 -->
+</head>
+<body>
+	<!-- 건너띄기 링크 -->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#gnbList">주 메뉴 바로가기</a></dd>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<!-- 상단 -->
+	<header class="inner">
+		<hgroup class="h_top">
+			<div class="container">
+				<!-- 로고 영역 -->
+				<h1>
+					<a href="\">
+						<span class="hidden_txt">로고 이미지</span>
+						<img src="../static/img/logo.png" alt="이대목동병원 개방형실험실 로고 01" />
+					</a>
+				</h1>
+
+				<!-- Gnb pc-->
+				<nav class="gnb-web" id="gnbList">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- Gnb mobile-->
+				<a href="#allMenu" class="m-menu">
+					<i></i>
+					<i></i>
+					<i></i>
+					<em class="hidden_txt">모바일 전체메뉴</em>
+				</a>
+				<aside class="gnb-mob">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<div class="gnb-bg"><em class="hidden_txt">백그라운드 영역</em></div>
+		</hgroup>
+	</header>
+
+	<!-- 본문 -->
+	<div id="wrapper" class="inner">
+		<div class="sub-top-bnr sub-top-bnr-02"><h2>연구지원</h2></div>
+		<div class="location">
+			<div class="container">
+				<a href="#" class="home"><em class="hidden_txt">홈 바로가기</em></a>
+				<div class="location-wrap">
+					<div class="dropDown" id="depth01">
+						<span><a href="javascript:void(0);">연구지원</a></span>
+						<ul class="cateList">
+							<li><a href="/about/greeting.html">사업단소개</a></li>
+							<li><a href="/company/company.html">참여기업현황</a></li>
+							<li><a href="/research/exp.html">연구지원</a></li>
+							<li><a href="/result/result.html">연구성과</a></li>
+							<li><a href="/jointResearch/jointResearch.html">공동연구회</a></li>
+							<li><a href="/notice/notice.html">정보광장</a></li>
+							<li><a href="/reservation/reservation_meeting_room.html">예약</a></li>
+						</ul>
+					</div>
+					<div class="dropDown" id="depth02">
+						<span><a href="javascript:void(0);">동물실험</a></span>
+						<ul class="cateList">
+							<li><a href="/research/exp.html">동물실험</a></li>
+							<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+						</ul>
+					</div>
+					<ul class="etc-link">
+						<li class="copy-link"><a href="javascript:void(0);" onclick="$Gb.activeFunc().copyUrl();"><em class="hidden_txt">링크 복사하기</em></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="contents exp">
+				<h3>동물실험</h3>
+				<div>
+					<!-- Tab menu -->
+					<ul class="tab-menu tab-list-01 col-3">
+						<li><a href="#tab01" class="on"><em>소개</em></a></li>
+						<li><a href="#tab02"><em>이용안내</em></a></li>
+						<li><a href="#tab03"><em>환경 및 미생물 모니터링</em></a></li>
+					</ul>
+					
+					<ul class="tab-contents tab-contents-type-01">
+						<li id="tab01">
+							<dl>
+								<dt>동물실험실 소개</dt>
+								<dd>
+									실험동물은 인간의 질병치료와 건강 증진을 위한 의생명 연구 및 교육에 절대적으로 필요한 연구자원으로 최근 의생명과학 분야의 발전과 함께 실험동물의<br/> 과학적, 윤리적 사용이 강조되고 있습니다.
+								</dd>
+								<dd>
+									이대목동병원 동물실험실은 동물실험 연구 환경의 변화에 맞춰 노력하고 있으며, 동물실험의 효율적인 지원을 위해 2020년 리모델링을 하여 2021년 개소했습니다.
+								</dd>
+								<dd>
+									이대목동병원 동물실험실은 약 155㎡의 규모이며, 청정실험구역 (SPF), 일반실험구역 (중대동물 사육 및 실험지원), 재반입실험구역으로 시설을 세분화하여 운영하고 있습니다.<br/>
+									동물실험실은 실험동물의 윤리적이고 과학적인 관리를 통하여 동물실험결과의 신뢰성 및 재현성, 또한 연구자들의 연구 역량이 충분히 발휘될 수 있는 연구환경 조성을 위하여 노력하겠습니다.
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>인원구성 및 업무</dt>
+								<dd>
+									<span class="sub-title">인원 구성</span>
+									<div class="basic-type">
+										<table>
+											<caption>이대목동병원 순환 셔틀버스</caption>
+											<colgroup>
+												<col style="width:20%;" />
+												<col style="width:20%;" />
+												<col style="width:20%;" />
+												<col style="width:20%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th>직함</th>
+													<th>성명</th>
+													<th>직위</th>
+													<th>전화번호</th>
+													<th>E-mail</th>
+												</tr>
+											</thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<td>실장</td>
+													<td>한경은</td>
+													<td>교수</td>
+													<td>&nbsp;</td>
+													<td>hanke@ewha.ac.kr</td>
+												</tr>
+												<tr>
+													<td>수의사</td>
+													<td>장현규</td>
+													<td>직원</td>
+													<td>2650-5777</td>
+													<td>eumc05@naver.com</td>
+												</tr>
+												<tr>
+													<td>사육사</td>
+													<td>진보성</td>
+													<td>직원</td>
+													<td>2650-2969</td>
+													<td>99975@eumc.ac.kr</td>
+												</tr>
+												<tr>
+													<td>세정사</td>
+													<td>최선욱</td>
+													<td>직원</td>
+													<td>2650-5845</td>
+													<td>97808@eumc.ac.kr</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>주요업무</dt>
+								<dd>
+									<ul class="dot-list2">
+										<li>동물실험게획 승인신청서 접수 및 처리</li>
+										<li>실험동물의 구입, 생산, 공급, 사육</li>
+										<li>동물실험실 청정환경 유지</li>
+										<li>동물실험에 관련된 연구 및 기술 지원</li>
+										<li>실험동물시설 및 기기의 관리와 운영</li>
+										<li>동물실험실 소개 및 이용 안내</li>
+										<li>동물실험윤리위원회 업무 지원</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>공간구성</dt>
+								<dd>
+									<div class="align-c">
+										<img src="../static/img/exp-map.png" alt="동물실험실 구성도">
+									</div>
+									<div class="basic-type">
+										<table>
+											<caption>이대목동병원 순환 셔틀버스</caption>
+											<colgroup>
+												<col style="width:20%;" />
+												<col style="width:16%;" />
+												<col style="width:32%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th scope="col">구분</th>
+													<th scope="col">호</th>
+													<th scope="col">실명</th>
+													<th scope="col">용도</th>
+												</tr>
+											</thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<td rowspan="7">일반구역</td>
+													<td>901</td>
+													<td>사무실</td>
+													<td>직원 사무실</td>
+												</tr>
+												<tr>
+													<td>903</td>
+													<td>중동물사육실</td>
+													<td>중동물사육(토끼)</td>
+												</tr>
+												<tr>
+													<td>904</td>
+													<td>중대동물 수술실</td>
+													<td>실험 동물 수술</td>
+												</tr>
+												<tr>
+													<td>905</td>
+													<td>대동물사육실</td>
+													<td>대동물 사육</td>
+												</tr>
+												<tr>
+													<td>-</td>
+													<td>폐기물 보관실</td>
+													<td>사체 보관</td>
+												</tr>
+												<tr>
+													<td>906</td>
+													<td>물품보관실, 냉장창고</td>
+													<td>사료 및 물품 보관</td>
+												</tr>
+												<tr>
+													<td>907</td>
+													<td>세정실</td>
+													<td>사육 기자재 세척 및 멸균</td>
+												</tr>
+												<tr>
+													<td rowspan="8">청정구역</td>
+													<td>908</td>
+													<td>사육실 1 (마우스)</td>
+													<td>IVC rack</td>
+												</tr>
+												<tr>
+													<td>909</td>
+													<td>사육실 2 (마우스)</td>
+													<td>청정(SPF)마우스 사육</td>
+												</tr>
+												<tr>
+													<td>910</td>
+													<td>사육실 3 (마우스)</td>
+													<td>청정(SPF)마우스 사육</td>
+												</tr>
+												<tr>
+													<td>911</td>
+													<td>사육실 4 (랫드)</td>
+													<td>청정(SPF)랫드 사육</td>
+												</tr>
+												<tr>
+													<td>912</td>
+													<td>검역실</td>
+													<td>마우스, 랫드 검역용 사육</td>
+												</tr>
+												<tr>
+													<td>913</td>
+													<td>실험실 1 (마우스)</td>
+													<td>연구 및 실험</td>
+												</tr>
+												<tr>
+													<td>914</td>
+													<td>실험실 2 (랫드)</td>
+													<td>연구 및 실험</td>
+												</tr>
+												<tr>
+													<td>915</td>
+													<td>실험실 3 (마우스)</td>
+													<td>연구 및 실험</td>
+												</tr>
+												<tr>
+													<td>재반입구역</td>
+													<td>902</td>
+													<td>재반입 동물사육실, 실험실4</td>
+													<td>재반입용 마우스, 랫드 사육 &#47; 연구 및 실험</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>	
+								</dd>
+							</dl>
+						</li>
+						<li id="tab02">
+							<dl>
+								<dt>교육</dt>
+								<dd>
+									<strong>동물실험 윤리 교육</strong>
+									<ul class="dot-list2">
+										<li>이화여자대학교 사이버 캠퍼스 (<a class="link" href="https://cyber.ewha.ac.kr/" target="_blank" title="새 창 열기">https://cyber.ewha.ac.kr/</a>) 온라인 교육 이수</li>
+									</ul>
+									<div class="diagram-inner">
+										<img class="img-pc" src="../static/img/exp-diagram-01.png" alt="이화여자대학교 사이버 캠퍼스 온라인 교육 이수 과정 - pc">
+										<img class="img-mob" src="../static/img/exp-diagram-01-mob.png" alt="이화여자대학교 사이버 캠퍼스 온라인 교육 이수 과정 - 모바일">
+										<span class="hidden_txt">새 계정 만들기 -> 외부인 로그인 -> 비교과과정 -> 동물실험과 실험대상동물 보호 -> 이수증 제출</span>
+									</div>
+									<p class="colored-red Description">외부인의 경우 소속을 명확하게 기입해야 수강 승인이 가능합니다.</p>
+								</dd>
+
+								<dd>
+									<strong>LMO 온라인 교육</strong>
+									<ul class="dot-list2">
+										<li>연구실안전교육시스템 (<a class="link" href="https://edu.labs.go.kr/front/" target="_blank" title="새 창 열기">https://edu.labs.go.kr/front/</a>)</li>
+									</ul>
+									<div class="diagram-inner">
+										<img class="img-pc" src="../static/img/exp-diagram-02.png" alt="연구실안전교육시스템 온라인 교육 이수 과정 - pc">
+										<img class="img-mob" src="../static/img/exp-diagram-02-mob.png" alt="연구실안전교육시스템 온라인 교육 이수 과정 - 모바일">
+										<span class="hidden_txt">수강신청 -> 온라인교육 -> LMO 안전교육 -> LMO 연구활동종사자교육(2시간) -> 수료증 제출</span>
+									</div>
+									<p class="colored-gray Description">연구책임자의 경우 &lsquo;LMO 연구책임자 교육&rsquo; 수강</p>
+								</dd>
+
+								<dd>
+									<strong>이용자 교육</strong>
+									<ul class="dot-list2">
+										<li>eumc05@naver.com으로 교육 인원 및 성함 제출 후 일정 조율하여 진행</li>
+										<li>추후 월 1회 교육 진행 예정</li>
+									</ul>
+									<div class="diagram-inner align-c">
+										<img class="img-pc" src="../static/img/exp-diagram-03.png" alt="이용자 교육 - pc">
+										<img class="img-mob" src="../static/img/exp-diagram-03-mob.png" alt="이용자 교육 - 모바일">
+										<span class="hidden_txt">
+											[연구자](양식1) 동물실험계획서 작성 -> [동물실험실] 동물실험계획서 접수 -> [IACUC]동물실험계획서 심사, 승인 -> [IACUC] IACUC 위원장 최종승인(승인서 발급) 
+											-> [동물실험실] 승인 결과 통보 -> [연구자](양식2) 이용자 등록 신청서 작성 후 카드키 수령 -> [연구자](양식3) 실험동물 구입 및 반입 신청서 작성 -> [동물실험실] 동물 구입, 검수, 검역, 사육을 실시하며 결과 통보 
+											-> [연구자] 구역별 출입 절차를 준수하며 동물실험 진행 -> [연구자] 필요한경우 (양식4) 동물반출 신청서 / (양식5) 기기및물품반입신청서 / (양식6) 실험실사용신청서 / (양식7) 시간외출입신청서 작성 
+											-> [동물실험실] 검토 후 허가하며 반입, 반출 절차를 감독, 지원, [연구자] (양식9)동물실험 종료 보고서 작성하여 제출 -> [동물실험실] 동물실험비용청구서 발송 -> [연구자] 사용료 납부 <-> [동물실험실] 영수증 발급
+										</span>
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>이용시간</dt>
+								<dd>
+									<p>동물실험실은 사육환경의 12시간 간격 조명 주기를 준수하고 UV 램프에 의한 자외선 소독, 일일 소독을 위하여 아래와 같이 이용 시간을 제한합니다.</p>
+									<p>&nbsp;</p>
+									<ul class="dot-list2">
+										<li>청정구역 이용시간 : 09:00~17:00 (17:00~20:00 시간 외 출입 신청서 제출 후 이용)</li>
+										<li>일반구역 및 재반입구역 이용시간 : 09:00 ~ 17:00 (17시 이후 출입을 희망할 경우 시간 외 출입신청서 제출 후 이용 가능)</li>
+										<li>토요일 및 공휴일 이용 : 토요일 및 공휴일 이용은 시간 외 출입신청서 제출 후 이용</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>동물 구입 및 반입</dt>
+								<dd>
+									<p>승인된 동물실험계획서에 한해서 동물구입 및 반입신청서 제출이 가능하며 실험동물의 주문방법은 동물실험실을 통한 주문, 연구자 직접 주문 모두 가능합니다.</p>
+									<p>&nbsp;</p>
+									<ul class="dot-list2">
+										<li>동물 반입 : 국내 동물의 경우 매주 화, 목요일/ 수입동물의 경우 일정 조율하여 반입</li>
+										<li>실험동물전문생산시설이 아닌 외부 대학, 연구소 등으로부터 동물 반입을 희망하는 경우 미생물 모니터링 성적서(18개월 누적 결과)를 eumc05@naver.com으로 제출 후 사전 승인 받아야만 반입이 가능합니다.</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>실험실 사용</dt>
+								<dd>
+									<strong>각 사육실 및 실험실</strong>
+									<ul class="dot-list2">
+										<li>
+											실험실 예약 절차
+											<div class="diagram-inner">
+												<img class="img-pc" src="../static/img/exp-diagram-04.png" alt="이용자 교육 - pc">
+												<img class="img-mob" src="../static/img/exp-diagram-04-mob.png" alt="이용자 교육 - 모바일">
+												<span class="hidden_txt">
+													최소 1일 전(양식6) 실험실 사용 신청서 접수(최초 1회) -> 구글 캘린더 이용자 등록 -> 이용 신청 -> 담당자 확인 후 실험실 예약 확정(신청서 접수자에 한해 승인 가능)
+												</span>
+											</div>
+										</li>
+										<li><button class="btn-type-icon route2" type="button"><em>실험실 예약 현황</em></button></li>
+										<li>실험실 사용 2주전 부터 예약가능</li>
+										<li>실험실 예약 후 노쇼(no-show) 3회 이상 발생시 실험실 이용 제한</li>
+										<li>동물실험실내 장비는 연구자 임의 이동을 금지하며 고장 및 파손 시 실비 보상하여야 합니다.</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>출입</dt>
+								<dd>
+									<p>동물실험실은 SPF 구역이 존재하는 곳으로서 외부 병원체가 유입되지 않도록 연구자께서는 물품 및 시약 반입에 각별히 유의하여 주시기 바랍니다.</p>
+									<p>특히 외부 동물실을 48시간 이내 출입한 실험자는 출입을 절대 금합니다. (타 동물실 출입 시 2주간 출입 자제 권고)</p>
+									<p>&nbsp;</p>
+									<p>* 출입 동선<br/> <span class="colored-red">하루 동안 동물실험실을 출입할 경우 SPF구역(사육실 1) -> SPF구역(사육실 2,3,4) -> 재반입구역 -> 일반구역(중, 대동물 사육실)순으로 입실하며 역순으로의 출입은 불가합니다.</span></p>
+								</dd>
+
+								<dd>
+									<strong>연구자</strong>
+									<ul class="dot-list2 green">
+										<li>
+										연구자 구역별 출입 복장
+										<ul>
+											<li>&ndash; 청정구역 (SPF) 출입 복장: 덧가운, 헤어캡, 마스크, 글로브, 슈커버</li>
+											<li>&ndash; 일반구역 (토끼) 출입 복장: 덧가운, 헤어캡, 마스크, 글로브, 슈커버, 장화</li>
+											<li>&ndash; 재반입구역 출입 복장: 덧가운, 헤어캡, 마스크, 글로브, 슈커버</li>
+										</ul>
+										</li>
+										<li>각 구역 출입 전 알코올 손 소독 후 (손 소독기 이용) 입실</li>
+										<li>실험용 물품은 사전 패스박스에서 알코올 분무 후 자외선 소독하여 반입 가능</li>
+										<li>패스 박스 이용이 불가능한 장비일 경우 동물실험실로 사전 협의를 거쳐야만 반입이 가능함.</li>
+									</ul>	
+								</dd>
+
+								<dd>
+									<strong>동물</strong>
+									<ul class="dot-list2">
+										<li>
+											반입<br/> 
+											동물반입: 매주 화&#47;목요일 (소형 설치류), 매주 수요일 (토끼)
+										</li>
+										<li>
+											외부 반출<br/> 
+											(양식4) 동물 반출신청서 제출: 반출 희망 1일 전까지 eumc05@naver.com으로 제출. 이동 상자는 개별 준비<br/> 
+											사육 케이지 상태로 동물실험실 외부로의 반출은 금지하며, 반출 절차는 연구자가 직접 시행함을 원칙으로 합니다.
+										</li>
+										<li>
+											폐사 개체<br/>
+											폐사 개체 발생 시 사육 케이지에 사체발생 라벨지 부착 후 사체발생보고서를 작성하여 담당연구자 및 연구책임자에게 이메일을 발송합니다.
+										</li>
+									</ul>
+								</dd>
+
+								<dd>
+									<strong>실험용 물품 (SPF구역)</strong>
+									<div class="basic-type-row">
+										<table>
+											<caption>실험용 물품 (SPF구역)</caption>
+											<colgroup>
+												<col style="width:20%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead></thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<th>반입</th>
+													<td>
+														동물실험실에서 멸균(Autoclave)이 필요한 물품의 경우 반입 희망 2일 전까지 (양식5)기기 및 물품 반입신청서와 물품 제출<br/> 
+														멸균이 불필요한 소모성 물품의 경우 패스박스에서 알코올과 UV 소독 (최소 5분간) 후 구역으로 반입
+													</td>
+												</tr>
+												<tr>
+													<th>반출</th>
+													<td>
+														실험에 사용 후 반출을 희망하는 물품은 연구자가 직접 패스박스를 이용하여 외부로 반출함
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</dd>
+
+								<dd>
+									<strong>실험용 물품 (일반구역)</strong>
+									<div class="basic-type-row">
+										<table>
+											<caption>실험용 물품 (일반구역)</caption>
+											<colgroup>
+												<col style="width:20%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead></thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<th>반입</th>
+													<td>
+														일반구역으로 반입을 희망하는 실험용 물품의 경우 알코올을 이용하여 간단한 표면 소독 후 반입
+													</td>
+												</tr>
+												<tr>
+													<th>반출</th>
+													<td>
+														실험에 사용 후 반출을 희망하는 물품은 연구자가 외부로 반출함
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</dd>
+
+								<dd>
+									<strong>실험용 물품 (재반입구역)</strong>
+									<div class="basic-type-row">
+										<table>
+											<caption>실험용 물품 (재반입구역)</caption>
+											<colgroup>
+												<col style="width:20%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead></thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<th>반입<br/>(일반구역 반입 기준과 동일)</th>
+													<td>
+														동물실험실에서 소독 또는 멸균이 필요한 물품의 경우 반입 희망 2일 전까지 (양식5)기기 및 물품 반입신청서와 물품 제출<br/> 멸균이 불필요한 소모성 물품의 경우 알코올을 이용하여 간단한 표면 소독 후 반입
+													</td>
+												</tr>
+												<tr>
+													<th>반출</th>
+													<td>
+														실험에 사용 후 반출을 희망하는 물품은 연구자가 직접 반출
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>일반 유의사항</dt>
+								<dd>
+									<ul class="dot-list2">
+										<li>실험 후 정리정돈을 철저히 하여야 합니다.</li>
+										<li>사육케이지 변동, 적출물 발생, 기타 비용 발생시 관련 기록부를 기재 하여야 하며 미 기재시 불이익은 연구자가 부담합니다.</li>
+										<li>동물실험 종료 시 동물실험실로 통보하여야 하며 비용기록부를 확인합니다.</li>
+										<li>이용자는 동물 배치 변경 및 타실험자 동물 무단 접촉을 금지합니다.</li>
+										<li>시약 제조는 실험자의 실험실에서 제조해서 반입하여야 합니다.</li>
+										<li>사육 장비의 외부 반출은 원칙적으로 금지합니다.</li>
+										<li>동물 및 사육 장비 접촉 시 글러브를 착용하여야 합니다.</li>
+										<li>외부 연구자 동반 출입 시 사전 승인 후 가능합니다.</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>사체 및 폐기물 관리</dt>
+								<dd>
+									<ul class="dot-list2">
+										<li>사체 - 비닐에 담아 무게를 잰 후 사체 기록지를 작성하고 냉동고에 보관합니다.</li>
+										<li>폐기물 -일반 폐기물과 감염성 폐기물을 구분하여 폐기물통에 분리수거합니다.</li>
+										<li>사인이 명확하지 않거나 감염이 의심되는 폐사동물의 경우에 신속하게 동물실험실에 연락을 취하여 다른 사고의 방지를 위하여 협조하여 주시기 바랍니다.</li>
+										<li>사용하고 남은 폐기물 및 소모품은 이용자의 책임하에 처리해야 합니다.</li>
+									</ul>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>관리비용</dt>
+								<dd>
+									<strong>사육 비용 (VAT 별도)</strong>
+									<div class="basic-type">
+										<div class="pc-only">
+											<table>
+												<caption>관리비용 - 사육 비용 (VAT 별도) - pc</caption>
+												<colgroup>
+													<col style="width:16.6%;" />
+													<col style="width:16.6%;" />
+													<col style="width:16.6%;" />
+													<col style="width:16.6%;" />
+													<col style="width:16.6%;" />
+													<col style="width:auto;" />
+												</colgroup>
+												<thead>
+													<tr>
+														<th>&nbsp;</th>
+														<th>Mouse</th>
+														<th>Rat</th>
+														<th>Rabbit</th>
+														<th>Dog</th>
+														<th>Pig</th>
+													</tr>
+												</thead>
+												<tfoot></tfoot>
+												<tbody>
+													<tr>
+														<td>내부</td>
+														<td>500원</td>
+														<td>800원</td>
+														<td>1,000원</td>
+														<td>5,000원</td>
+														<td>10,000원</td>
+													</tr>
+													<tr>
+														<td>외부</td>
+														<td>3,000원</td>
+														<td>4,000원</td>
+														<td>5,000원</td>
+														<td>10,000원</td>
+														<td>20,000원</td>
+													</tr>
+													<tr>
+														<td>1 케이지 당<br/> 최대수용</td>
+														<td>5마리</td>
+														<td>2마리</td>
+														<td>1마리</td>
+														<td>1마리</td>
+														<td>1마리</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="mob-only">
+											<table>
+												<caption>관리비용 - 사육 비용 (VAT 별도) - 모바일</caption>
+												<colgroup>
+													<col style="width:auto;" />
+													<col style="width:26%;" />
+													<col style="width:26%;" />
+													<col style="width:26%;" />
+												</colgroup>
+												<thead></thead>
+												<tfoot></tfoot>
+												<tbody>
+													<tr>
+														<th>&nbsp;</th>
+														<td style="border-top-width:1px;">내부</td>
+														<td style="border-top-width:1px;">외부</td>
+														<td style="border-top-width:1px;">1 케이지 당<br/> 최대수용</td>
+													</tr>
+													<tr>
+														<th>Mouse</th>
+														<td>500원</td>
+														<td>3,000원</td>
+														<td>5마리</td>
+													</tr>
+													<tr>
+														<th>Rat</th>
+														<td>800원</td>
+														<td>4,000원</td>
+														<td>2마리</td>
+													</tr>
+													<tr>
+														<th>Rabbit</th>
+														<td>1,000원</td>
+														<td>5,000원</td>
+														<td>1마리</td>
+													</tr>
+													<tr>
+														<th>Dog</th>
+														<td>5,000원</td>
+														<td>10,000원</td>
+														<td>1마리</td>
+													</tr>
+													<tr>
+														<th>Pig</th>
+														<td>10,000원</td>
+														<td>20,000원</td>
+														<td>1마리</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<ul class="info-list">
+										<li>내부 : 이화여자대학교 의과대학 부속병원 소속 교원</li>
+										<li>외부 : 입주한 산학 기업 및 기관을 포함한 기업</li>
+										<li>산학 입주 기업은 내부 단가의 2배, 내부 교원과 협업하는 과제는 추가 20% 할인 적용</li>
+										<li>외부는 전체 케이지 수용량의 30% 미만으로 배정</li>
+										<li>외부는 mouse 50cage, rat 30cage, rabbit 10cage, dog 3cage, pig 3cage 이상 사용 시 단가 1.2배 적용</li>
+									</ul>
+								</dd>
+								<dd>
+									<strong>물품 보관함 비용 (VAT 별도)</strong>
+									<div class="basic-type">
+										<table>
+											<caption>관리비용 - 물품 보관함 비용 (VAT 별도)</caption>
+											<colgroup>
+												<col style="width:25%;" />
+												<col style="width:25%;" />
+												<col style="width:25%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th>구분</th>
+													<th>위치</th>
+													<th>금액</th>
+													<th>비고</th>
+												</tr>
+											</thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<td rowspan="3">물품 보관함(1)</td>
+													<td rowspan="3">일반구역&#47;복도</td>
+													<td>1개 – 10,000</td>
+													<td rowspan="6">보관함(1), (2) 합산 최대 3개 이용 가능</td>
+												</tr>
+												<tr>
+													<td>2개 – 30,000</td>
+												</tr>
+												<tr>
+													<td>3개 – 50,000</td>
+												</tr>
+												<tr>
+													<td rowspan="3">물품 보관함(2)</td>
+													<td rowspan="3">중&middot;대동물 수술실</td>
+													<td>1개 – 7,000</td>
+												</tr>
+												<tr>
+													<td>2개 – 20,000</td>
+												</tr>
+												<tr>
+													<td>3개 – 35,000</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<ul class="info-list">
+										<li>연구책임자별 기본 1개 우선 배정 (2개 이상은 운영위원회 논의 후 추가 배정 가능)</li>
+										<li>외부 이용의 경우, 내부 금액의 세 배로 함</li>
+										<li>산학 입주 기업은 외부 단가에 20% 할인, 내부 교원과 협업하는 과제는 40% 할인 적용</li>
+									</ul>
+								</dd>
+								<dd>
+									<strong>전용 공간 월 임대료 (VAT 별도)</strong>
+									<div class="basic-type">
+										<table>
+											<caption>관리비용 - 전용 공간 월 임대료 (VAT 별도)</caption>
+											<colgroup>
+												<col style="width:20%;" />
+												<col style="width:20%;" />
+												<col style="width:20%;" />
+												<col style="width:20%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th>&nbsp;</th>
+													<th>면적</th>
+													<th>금액</th>
+													<th>면적</th>
+													<th>금액(내부 1,2)</th>
+												</tr>
+											</thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<td rowspan="5">물품 보관함(1)</td>
+													<td>A &#8804; 1m&sup2;</td>
+													<td>20,000원</td>
+													<td>5m&sup2; &#60; A &#8804; 6m&sup2;</td>
+													<td>194,000원</td>
+												</tr>
+												<tr>
+													<td>1m&sup2; &#60; A &#8804; 2m&sup2;</td>
+													<td>44,000원</td>
+													<td>6m&sup2; &#60; A &#8804; 7m&sup2;</td>
+													<td>249,000원</td>
+												</tr>
+												<tr>
+													<td>2m&sup2; &#60; A &#8804; 3m&sup2;</td>
+													<td>73,000원</td>
+													<td>7m&sup2; &#60; A &#8804; 8m&sup2;</td>
+													<td>312,000원</td>
+												</tr>
+												<tr>
+													<td>3m&sup2; &#60; A &#8804; 4m&sup2;</td>
+													<td>107,000원</td>
+													<td>8m&sup2; &#60; A &#8804; 9m&sup2;</td>
+													<td>386,000원</td>
+												</tr>
+												<tr>
+													<td>4m&sup2; &#60; A &#8804; 5m&sup2;</td>
+													<td>147,000원</td>
+													<td>9m&sup2; &#60; A &#8804; 10m&sup2;</td>
+													<td>472,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<ul class="info-list">
+										<li>외부 이용의 경우, 내부 금액의 세 배로 함</li>
+										<li>산학 입주 기업은 외부 단가에 20% 할인, 내부 교원과 협업하는 과제는 40% 할인 적용</li>
+										<li>실험실 3 내부 공간만 대여 가능</li>
+									</ul>
+								</dd>
+								<dd>
+									<strong>실험대 월 임대료 (VAT 별도)</strong>
+									<div class="basic-type">
+										<table>
+											<caption>관리비용 - 실험대 월 임대료 (VAT 별도)</caption>
+											<colgroup>
+												<col style="width:50%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th>&nbsp;</th>
+													<th>실험대 1set</th>
+												</tr>
+											</thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<td>내부</td>
+													<td>300,000원</td>
+												</tr>
+												<tr>
+													<td>외부</td>
+													<td>900,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<ul class="info-list">
+										<li>청정구역 내 1 set만 대여 가능</li>
+										<li>산학 입주 기업은 외부 단가에 20% 할인, 내부 교원과 협업하는 과제는 40% 할인 적용</li>
+									</ul>
+								</dd>
+								<dd>
+									<strong>실험대 선반 월 임대료 (VAT 별도)</strong>
+									<div class="basic-type">
+										<table>
+											<caption>관리비용 - 실험대 선반 월 임대료 (VAT 별도)</caption>
+											<colgroup>
+												<col style="width:50%;" />
+												<col style="width:auto;" />
+											</colgroup>
+											<thead>
+												<tr>
+													<th>&nbsp;</th>
+													<th>실험대 선반</th>
+												</tr>
+											</thead>
+											<tfoot></tfoot>
+											<tbody>
+												<tr>
+													<td>내부</td>
+													<td>10,000원</td>
+												</tr>
+												<tr>
+													<td>외부</td>
+													<td>30,000원</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<ul class="info-list">
+										<li>청정구역 내 1개만 대여 가능</li>
+										<li>산학 입주 기업은 외부 단가에 20% 할인, 내부 교원과 협업하는 과제는 40% 할인 적용</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li id="tab03">
+							<dl>
+								<dt>환경 및 미생물 모니터링</dt>
+								<dd>
+									<ul class="dash-list green">
+										<li>분기별로 연 4회 모니터링 진행</li>
+										<li>
+											<p>미생물 모니터링 결과</p>
+											<div>
+												<span><em>2021 1분기</em> <button type="button" class="btn-type-icon route3" onclick="javascript:location.href='https://mokdong.eumc.ac.kr/asset/dwfile/2021.03.15._%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EB%AA%A9%EB%8F%99%EB%B3%91%EC%9B%90_%EC%84%B1%EC%A0%81%EC%84%9C(1%EB%B6%84%EA%B8%B0).pdf'"><em>결과보기</em></button></span>
+												<span><em>2021 2분기</em> <button type="button" class="btn-type-icon route3" onclick="javascript:location.href='https://mokdong.eumc.ac.kr/asset/dwfile/2021.05.31._%EC%9D%B4%ED%99%94%EC%97%AC%EC%9E%90%EB%8C%80%ED%95%99%EA%B5%90_%EB%AA%A9%EB%8F%99%EB%B3%91%EC%9B%90_%EC%84%B1%EC%A0%81%EC%84%9C(2%EB%B6%84%EA%B8%B0).pdf'"><em>결과보기</em></button></span>
+											</div>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 하단 -->
+	<footer>
+		<div class="container">
+			<span class="logoFoot"><em class="hidden_txt">이대목동병원 개방형실험실</em><img src="../static/img/footer_logo.png" alt="이대목동병원 개방형실험실 로고 02"></span>
+			<address>
+				<ul>
+					<li>이대목동병원 감염병 특화 개방형실험실 사업단</li>
+					<li>Copyright© Ewha womans university medical center All rights reserved.</li>
+				</ul>
+			</address>
+			<!-- <div class="btn-privacy"><button type="button">개인정보 처리방침</button></div> -->
+			<div class="relatedSite">
+				<div class="dropDown">
+					<span><a href="javascript:void(0);"><em>연구기관</em></a></span>
+					<ul class="related_inst">
+						<li><a href="#" title="새 창 열기" target="_blank">연구진흥단&#47;첨단의생명연구원</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">이대목동병원임상시험센터</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">연구대상자보호센터</a></li>
+					</ul>
+				</div>
+				
+				<div class="familySite dropDown">
+					<span><a href="javascript:void(0);"><em>패밀리사이트</em></a></span>
+					<ul class="related_inst">
+						<li><a href="https://www.eumc.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의료원</a></li>
+						<li><a href="https://www.eumc.ac.kr/fund/" title="새 창 열기" target="_blank">이화여자대학교 의료원 발전기금</a></li>
+						<li><a href="https://mokdong.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대목동병원</a></li>
+						<li><a href="https://seoul.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대서울병원</a></li>
+						<li><a href="https://wch.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대여성암병원</a></li>
+						<li><a href="http://www.ewha.ac.kr/mbs/ewhakr/index.jsp" title="새 창 열기" target="_blank">이화여자대학교</a></li>
+						<li><a href="http://www.ewhamed.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의과대학</a></li>
+						<li><a href="http://nursing.ewha.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 간호대학</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-btn">
+				<button class="btn-top" type="button" onclick="$Gb.activeFunc().goTop();"><em class="hidden_txt">상단으로 이동</em></button>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

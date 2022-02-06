@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>이대목동병원 개방형실험실</title>
+
+	<script src="static/js/jquery-3.3.1.min.js"></script>
+	<script src="static/js/jquery-ui.min.js"></script>
+	<script src="static/js/slick.js"></script>
+	<script src="static/js/swiper.min.js"></script>
+	<script src="static/js/common.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="static/css/base.css"> <!-- reset -->
+	<link rel="stylesheet" type="text/css" href="static/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" media="all and (max-width:1280px)" type="text/css" href="static/css/mobile.css"> <!-- 반응형 -->
+</head>
+<body>
+	<!-- 건너띄기 링크 -->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#gnbList">주 메뉴 바로가기</a></dd>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<!-- 상단 -->
+	<header class="inner">
+		<hgroup class="h_top">
+			<div class="container">
+				<!-- 로고 영역 -->
+				<h1>
+					<a href="\">
+						<span class="hidden_txt">로고 이미지</span>
+						<img src="static/img/logo.png" alt="이대목동병원 개방형실험실 로고 01" />
+					</a>
+				</h1>
+
+				<!-- Gnb pc-->
+				<nav class="gnb-web" id="gnbList">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- Gnb mobile-->
+				<a href="#allMenu" class="m-menu">
+					<i></i>
+					<i></i>
+					<i></i>
+					<em class="hidden_txt">모바일 전체메뉴</em>
+				</a>
+				<aside class="gnb-mob">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<div class="gnb-bg"><em class="hidden_txt">백그라운드 영역</em></div>
+		</hgroup>
+	</header>
+
+	<!-- 본문 -->
+	<div id="wrapper" class="inner">
+		<h2><em class="hidden_txt">메인페이지</em></h2>
+		
+		<!-- 메인 이미지 슬라이드 -->
+		<section class="main-section-wrap main-section-01">
+			<div class="mainCarousel">
+				<div class="slide-inner slide-inner-01">
+					<dl class="txt-content">
+						<dt>이대목동병원</dt>
+						<dd>
+							<b class="colored-green">감염병 특화</b><br/>
+							개방형 실험실 사업단
+						</dd>
+					</dl>
+				</div>
+				<div class="slide-inner slide-inner-02">
+					<dl class="txt-content">
+						<dt>창업기업</dt>
+						<dd>
+							병원 인프라를 활용하여<br class="pc-only" />
+							<b class="colored-green">초기 비용절감</b>으로 시장 진입 장벽을 낮추고<br class="pc-only" /> 
+							임상의 등과의 협업을 통해 <b class="colored-green">기술 경쟁력 확보</b>
+						</dd>
+					</dl>
+				</div>
+				<div class="slide-inner slide-inner-03">
+					<dl class="txt-content">
+						<dt>병원</dt>
+						<dd>
+							병원의우수한 연구자원<br class="pc-only" /> 
+							<em>(인력, 연구장비, 노하우등)</em>의 활용 촉진을 통한<br class="pc-only" /> 
+							국가 연구개발성과의 산업내 기여도 제고
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<span class="playController"></span>
+		</section>
+
+		<section class="main-section-wrap main-section-02">
+			<div class="container">
+				<dl class="quickMenu">
+					<dt>
+						<strong>Quick link</strong><br/>
+						<span>이대목동병원 개방형<br/> 실험 관련 링크입니다.</span>
+					</dt>
+					<dd>
+						<ul>
+							<li><a href="https://pure.ewha.ac.kr/en/" target="_blank" title="새 창 열기"><span>PURE SYSTEM</span></a></li>
+							<li><a href="http://epm.ewha.ac.kr/" target="_blank" title="새 창 열기"><span>이대산단+EPM</span></a></li>
+							<li><a href="https://research.ewha.ac.kr/" target="_blank" title="새 창 열기"><span>이화여자대학교 산학협력관</span></a></li>
+							<li><a href="https://www.sba.seoul.kr/kr/sbst15h1#business02" target="_blank" title="새 창 열기"><span>SBA+M밸리</span></a></li>
+							<li><a href="https://www.hbic.or.kr/" target="_blank" title="새 창 열기"><span>한국보건산업진흥원<br/> 개방형실험실</span></a></li>
+							<li><a href="/reservation/reservation_meeting_room.html"><span>예약<br/>(회의실&#47;장비)</span></a></li>
+						</ul>
+					</dd>
+				</dl>	
+			</div>
+		</section>
+
+		<section class="main-section-wrap main-section-03">
+			<div class="container">
+				<h3>
+					<strong>Notice</strong><br class="mb-only" />
+					<span>개방형실험실에 대한 소식을 전달합니다.</span>
+				</h3>
+				<button type="button" class="btn-more" onclick="javascript:location.href='/notice/notice.html'">more</button>
+				<div class="noticeCarousel">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="notice-list" tabindex=0>
+								<em class="currentDate">2021-02-25</em><br/>
+								<strong><a href="#">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></strong><br/>
+								<span><a href="">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="notice-list" tabindex=0>
+								<em class="currentDate">2021-02-25</em><br/>
+								<strong><a href="#">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></strong><br/>
+								<span><a href="">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="notice-list" tabindex=0>
+								<em class="currentDate">2021-02-25</em><br/>
+								<strong><a href="#">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></strong><br/>
+								<span><a href="">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="notice-list" tabindex=0>
+								<em class="currentDate">2021-02-25</em><br/>
+								<strong><a href="#">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></strong><br/>
+								<span><a href="">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="notice-list" tabindex=0>
+								<em class="currentDate">2021-02-25</em><br/>
+								<strong><a href="#">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></strong><br/>
+								<span><a href="">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="notice-list" tabindex=0>
+								<em class="currentDate">2021-02-25</em><br/>
+								<strong><a href="#">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></strong><br/>
+								<span><a href="">이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.이대목동병원 중소벤처기업부 관련 공지사항을 알려드립니다.</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-section-wrap main-section-04">
+			<div class="container">
+				<div class="col-2">
+					<h3><strong>과제공고</strong></h3>
+					<button type="button" class="btn-more" onclick="javascript:location.href='/notice/announcement.html'">more</button>
+					<div class="board-list">
+						<ul>
+							<li>
+								<a href="#">[한국보건산업진흥원] 2021년 과제공고 내용 제목입니다. 제목 제목 제목</a>
+								<em class="currentDate">2021.11.03</em>
+							</li>
+							<li>
+								<a href="#">[한국보건산업진흥원] 2021년 과제공고 내용 제목입니다. 제목 제목 제목</a>
+								<em class="currentDate">2021.11.03</em>
+							</li>
+							<li>
+								<a href="#">[한국보건산업진흥원] 2021년 과제공고 내용 제목입니다. 제목 제목 제목</a>
+								<em class="currentDate">2021.11.03</em>
+							</li>
+							<li>
+								<a href="#">[한국보건산업진흥원] 2021년 과제공고 내용 제목입니다. 제목 제목 제목</a>
+								<em class="currentDate">2021.11.03</em>
+							</li>
+						</ul>
+					</div>
+				</div>	
+				<div class="col-2 foot-banner">
+					<h3><strong>문의</strong></h3>
+					<div class="contact">
+						<ul>
+							<li class="icon-Tel"><a href="tel:02-2650-2026">02-2650-2026</a></li>
+							<li class="icon-Mail"><a href="mailto:eumcjar86@naver.com">eumcjar86@naver.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- 하단 -->
+	<footer>
+		<div class="container">
+			<span class="logoFoot"><em class="hidden_txt">이대목동병원 개방형실험실</em><img src="static/img/footer_logo.png" alt="이대목동병원 개방형실험실 로고 02"></span>
+			<address>
+				<ul>
+					<li>이대목동병원 감염병 특화 개방형실험실 사업단</li>
+					<li>Copyright© Ewha womans university medical center All rights reserved.</li>
+				</ul>
+			</address>
+			<!-- <div class="btn-privacy"><button type="button">개인정보 처리방침</button></div> -->
+			<div class="relatedSite">
+				<div class="dropDown">
+					<span><a href="javascript:void(0);"><em>연구기관</em></a></span>
+					<ul class="related_inst">
+						<li><a href="#" title="새 창 열기" target="_blank">연구진흥단&#47;첨단의생명연구원</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">이대목동병원임상시험센터</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">연구대상자보호센터</a></li>
+					</ul>
+				</div>
+				
+				<div class="familySite dropDown">
+					<span><a href="javascript:void(0);"><em>패밀리사이트</em></a></span>
+					<ul class="related_inst">
+						<li><a href="https://www.eumc.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의료원</a></li>
+						<li><a href="https://www.eumc.ac.kr/fund/" title="새 창 열기" target="_blank">이화여자대학교 의료원 발전기금</a></li>
+						<li><a href="https://mokdong.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대목동병원</a></li>
+						<li><a href="https://seoul.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대서울병원</a></li>
+						<li><a href="https://wch.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대여성암병원</a></li>
+						<li><a href="http://www.ewha.ac.kr/mbs/ewhakr/index.jsp" title="새 창 열기" target="_blank">이화여자대학교</a></li>
+						<li><a href="http://www.ewhamed.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의과대학</a></li>
+						<li><a href="http://nursing.ewha.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 간호대학</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-btn">
+				<button class="btn-top" type="button" onclick="$Gb.activeFunc().goTop();"><em class="hidden_txt">상단으로 이동</em></button>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

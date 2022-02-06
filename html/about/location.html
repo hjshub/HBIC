@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>이대목동병원 개방형실험실</title>
+
+	<script src="../static/js/jquery-3.3.1.min.js"></script>
+	<script src="../static/js/jquery-ui.min.js"></script>
+	<script src="../static/js/common.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../static/css/base.css"> <!-- reset -->
+	<link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" media="all and (max-width:1280px)" type="text/css" href="../static/css/mobile.css"> <!-- 반응형 -->
+</head>
+<body>
+	<!-- 건너띄기 링크 -->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#gnbList">주 메뉴 바로가기</a></dd>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<!-- 상단 -->
+	<header class="inner">
+		<hgroup class="h_top">
+			<div class="container">
+				<!-- 로고 영역 -->
+				<h1>
+					<a href="\">
+						<span class="hidden_txt">로고 이미지</span>
+						<img src="../static/img/logo.png" alt="이대목동병원 개방형실험실 로고 01" />
+					</a>
+				</h1>
+
+				<!-- Gnb pc-->
+				<nav class="gnb-web" id="gnbList">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- Gnb mobile-->
+				<a href="#allMenu" class="m-menu">
+					<i></i>
+					<i></i>
+					<i></i>
+					<em class="hidden_txt">모바일 전체메뉴</em>
+				</a>
+				<aside class="gnb-mob">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<div class="gnb-bg"><em class="hidden_txt">백그라운드 영역</em></div>
+		</hgroup>
+	</header>
+
+	<!-- 본문 -->
+	<div id="wrapper" class="inner">
+		<div class="sub-top-bnr sub-top-bnr-01"><h2>사업단소개</h2></div>
+		<div class="location">
+			<div class="container">
+				<a href="#" class="home"><em class="hidden_txt">홈 바로가기</em></a>
+				<div class="location-wrap">
+					<div class="dropDown" id="depth01">
+						<span><a href="javascript:void(0);">사업단소개</a></span>
+						<ul class="cateList">
+							<li><a href="/about/greeting.html">사업단소개</a></li>
+							<li><a href="/company/company.html">참여기업현황</a></li>
+							<li><a href="/research/exp.html">연구지원</a></li>
+							<li><a href="/result/result.html">연구성과</a></li>
+							<li><a href="/jointResearch/jointResearch.html">공동연구회</a></li>
+							<li><a href="/notice/notice.html">정보광장</a></li>
+							<li><a href="/reservation/reservation_meeting_room.html">예약</a></li>
+						</ul>
+					</div>
+					<div class="dropDown" id="depth02">
+						<span><a href="javascript:void(0);">오시는 길</a></span>
+						<ul class="cateList">
+							<li><a href="/about/greeting.html">인사말</a></li>
+							<li><a href="/about/introduce.html">소개</a></li>
+							<li><a href="/about/vision.html">사업추친전략</a></li>
+							<li><a href="/about/organization.html">조직도</a></li>
+							<li><a href="/about/location.html">오시는길</a></li>
+						</ul>
+					</div>
+					<ul class="etc-link">
+						<li class="copy-link"><a href="javascript:void(0);" onclick="$Gb.activeFunc().copyUrl();"><em class="hidden_txt">링크 복사하기</em></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="contents map">
+				<h3>오시는 길</h3>
+				<div class="map-area"><img src="../static/img/map-sample.jpg" alt="지도 샘플 이미지"></div>
+				<dl class="table">
+					<dt>주소</dt>
+					<dd>
+						<ul class="list-type-02">
+							<li><span class="caption">지번</span> 서울특별시 양천구 목동 911-1</li>
+							<li><span class="caption blue">도로</span> 서울특별시 양천구 안양천로 1071</li>
+						</ul>
+					</dd>
+				</dl>
+
+				<dl class="table">
+					<dt>셔틀버스</dt>
+					<dd>
+						<div class="title-bar"><em>이대목동병원 순환 셔틀버스</em></div>
+						<div class="basic-type">
+							<div class="pc-only">
+								<table>
+									<caption>이대목동병원 순환 셔틀버스 표(pc)</caption>
+									<colgroup>
+										<col style="width:10%;" />
+										<col style="width:30%;" />
+										<col style="width:30%;" />
+										<col style="width:auto;" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th>구분</th>
+											<th>당산역(9호선11번출구)</th>
+											<th>영등포구청역<br/> (2호선1번출구&#47;5호선 7번출구)</th>
+											<th>오목교역(5호선 4번출구)</th>
+										</tr>
+									</thead>
+									<tfoot></tfoot>
+									<tbody>
+										<tr>
+											<td>첫차</td>
+											<td>06:10</td>
+											<td>06:15</td>
+											<td>06:20</td>
+										</tr>
+										<tr>
+											<td>막차</td>
+											<td>22:35</td>
+											<td>22:40</td>
+											<td>18:10</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="mob-only">
+								<table>
+									<caption>이대목동병원 순환 셔틀버스 표(모바일)</caption>
+									<colgroup>
+										<col style="width:36%;" />
+										<col style="width:32%;" />
+										<col style="width:auto;" />
+									</colgroup>
+									<thead></thead>
+									<tfoot></tfoot>
+									<tbody>
+										<tr>
+											<th>구분</th>
+											<td>첫차</td>
+											<td>막차</td>
+										</tr>
+										<tr>
+											<th>당산역(9호선11번출구)</th>
+											<td>06:10</td>
+											<td>22:35</td>
+										</tr>
+										<tr>
+											<th>영등포구청역<br/> (2호선1번출구&#47;5호선 7번출구)</th>
+											<td>06:15</td>
+											<td>22:40</td>
+										</tr>
+										<tr>
+											<th>오목교역(5호선 4번출구)</th>
+											<td>06:20</td>
+											<td>18:10</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="dot-list">
+								<li>시간대별 운행시간은 운행시간표를 참조하시기 바랍니다(도로상황에 따라 운영시간이 다소 변경될 수 있습니다)</li>
+								<li>토요일 오후, 일요일, 공휴일은 운행하지 않습니다.</li>
+							</ul>
+							<button type="button" class="btn-type-icon route btn-layerPop-Open" name="busTimetable01"><em>셔틀버스 운행시간표</em></button>
+						</div>
+						<div class="route-map">
+							<img class="img-pc" src="../static/img/routeMap-01.png" alt="이대목동병원 순환 셔틀버스 경로 - pc">
+							<img class="img-mob" src="../static/img/routeMap-01-mob.png" alt="이대목동병원 순환 셔틀버스 경로 - 모바일">
+							<span class="hidden_txt">이대목동병원 -> 선유도역(8번출구) -> 당산역(11번출구) -> 영등포구청역(1번출구) -> 오목교역(4번출구) -> 이대목동병원</span>
+						</div>
+
+						<div class="title-bar"><em>이대목동병원 &#8596; 이대서울병원 순환</em></div>
+						<div class="basic-type type02">
+							<div class="pc-only">
+								<table>
+									<caption>이대목동병원 &#8596; 이대서울병원 순환 셔틀버스 - pc</caption>
+									<colgroup>
+										<col style="width:10%;" />
+										<col style="width:30%;" />
+										<col style="width:30%;" />
+										<col style="width:auto;" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th>구분</th>
+											<th>당산역(9호선11번출구)</th>
+											<th>영등포구청역<br/> (2호선1번출구&#47;5호선 7번출구)</th>
+											<th>오목교역(5호선 4번출구)</th>
+										</tr>
+									</thead>
+									<tfoot></tfoot>
+									<tbody>
+										<tr>
+											<td>첫차</td>
+											<td>06:10</td>
+											<td>06:15</td>
+											<td>06:20</td>
+										</tr>
+										<tr>
+											<td>막차</td>
+											<td>22:35</td>
+											<td>22:40</td>
+											<td>18:10</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="mob-only">
+								<table>
+									<caption>이대목동병원 &#8596; 이대서울병원 순환 셔틀버스 표(모바일)</caption>
+									<colgroup>
+										<col style="width:36%;" />
+										<col style="width:32%;" />
+										<col style="width:auto;" />
+									</colgroup>
+									<thead></thead>
+									<tfoot></tfoot>
+									<tbody>
+										<tr>
+											<th>구분</th>
+											<td>첫차</td>
+											<td>막차</td>
+										</tr>
+										<tr>
+											<th>당산역(9호선11번출구)</th>
+											<td>06:10</td>
+											<td>22:35</td>
+										</tr>
+										<tr>
+											<th>영등포구청역<br/> (2호선1번출구&#47;5호선 7번출구)</th>
+											<td>06:15</td>
+											<td>22:40</td>
+										</tr>
+										<tr>
+											<th>오목교역(5호선 4번출구)</th>
+											<td>06:20</td>
+											<td>18:10</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<ul class="dot-list">
+								<li>시간대별 운행시간은 운행시간표를 참조하시기 바랍니다(도로상황에 따라 운영시간이 다소 변경될 수 있습니다)</li>
+							</ul>
+							<button type="button" class="btn-type-icon route btn-layerPop-Open" name="busTimetable02"><em>셔틀버스 운행시간표</em></button>
+						</div>
+						<div class="route-map">
+							<img class="img-pc" src="../static/img/routeMap-02.png" alt="이대목동병원 <-> 이대서울병원 순환 셔틀버스 경로 - pc">
+							<img class="img-mob" src="../static/img/routeMap-02-mob.png" alt="이대목동병원 <-> 이대서울병원 순환 셔틀버스 경로 - 모바일">
+							<span class="hidden_txt">이대목동병원 -> 신목동역(3번출구) -> 이대서울병원 -> 신목동역(2번 출구) -> 이대목동병원</span>
+						</div>	
+					</dd>
+				</dl>
+
+				<dl class="table">
+					<dt>지하철</dt>
+					<dd>
+						<ul class="list-type-01">
+							<li>
+								<span class="caption navy">1호선</span>
+								구로역 2번 출구 &#8594; 간선 571번 버스 탑승 &#8594; 이대목동병원입구 정류장 하차
+							</li>
+							<li>
+								<span class="caption green">2호선</span>
+								당산역 1번 출구 &#8594; 지선 6620 버스 탑승 &#8594; 이대목동병원입구 정류장 하차<br/>
+								영등포구청역 4번 출구 &#8594; 지선 6637 버스 탑승 &#8594; 목동 6단지 샛길 정류장 하차
+							</li>
+							<li>
+								<span class="caption purple">5호선</span>
+								오목교역 2번 출구 &#8594; 지선 6624, 지선 6637, 간선 603, 간선 571, 양천 02 버스 중 탑승 &#8594; 이대목동병원입구 정류장 하차<br/> 
+								영등포구청역 7번 출구 &#8594; 지선 6637 버스 탑승 &#8594; 목동 6단지샛길 정류장 하차<br/>
+								목동역 5번출구 &#8594; 간선 603 버스 탑승 &#8594; 이대목동병원입구 정류장 하차<br/>
+								목동역 3번 출구 &#8594; 지선 6620 버스 탑승 &#8594; 이대목동병원입구 정류장 하차
+							</li>
+							<li>
+								<span class="caption brown">9호선</span>
+								신목동역 2번 출구 → 간선 571, 지선 6620, 지선 6627 버스 중 탑승 → 월촌중학교 정류장 하차
+							</li>
+						</ul>
+					</dd>
+				</dl>
+
+				<dl class="table">
+					<dt>버스</dt>
+					<dd>
+						<ul class="list-type-03">
+							<li>
+								<span class="caption navy">간선</span>
+								674, 571, 603
+							</li>
+							<li>
+								<span class="caption green">지선</span>
+								6620, 6624, 6627, 6637
+							</li>
+							<li>
+								<span class="caption red">광역</span>
+								700
+							</li>
+							<li>
+								<span class="caption green">마을</span>
+								양천 01, 양천 02
+							</li>
+							<li>
+								<span class="caption blue2">공항</span>
+								608
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<!-- 이대목동병원 순환 셔틀버스 운행시간표 레이어 팝업 -->
+	<div class="layerPop" id="busTimetable01">
+		<div class="pop_contents"><img src="https://mokdong.eumc.ac.kr/asset/img/hos/img_hos05.jpg" alt="이대목동병원 셔틀버스 운행시간표"></div>
+		<button type="button" class="btn-layerPop-Close"><em class="hidden_txt">레이어 팝업 닫기</em></button>
+	</div>
+
+	<!-- 이대목동병원 ↔ 이대서울병원 순환 셔틀버스 운행시간표 레이어 팝업 -->
+	<div class="layerPop" id="busTimetable02">
+		<div class="pop_contents"><img src="https://mokdong.eumc.ac.kr/asset/img/hos/hos0501_02.jpg" alt="이대목동병원 셔틀버스 운행시간표"></div>
+		<button type="button" class="btn-layerPop-Close"><em class="hidden_txt">레이어 팝업 닫기</em></button>
+	</div>
+
+	<!-- 하단 -->
+	<footer>
+		<div class="container">
+			<span class="logoFoot"><em class="hidden_txt">이대목동병원 개방형실험실</em><img src="../static/img/footer_logo.png" alt="이대목동병원 개방형실험실 로고 02"></span>
+			<address>
+				<ul>
+					<li>이대목동병원 감염병 특화 개방형실험실 사업단</li>
+					<li>Copyright© Ewha womans university medical center All rights reserved.</li>
+				</ul>
+			</address>
+			<!-- <div class="btn-privacy"><button type="button">개인정보 처리방침</button></div> -->
+			<div class="relatedSite">
+				<div class="dropDown">
+					<span><a href="javascript:void(0);"><em>연구기관</em></a></span>
+					<ul class="related_inst">
+						<li><a href="#" title="새 창 열기" target="_blank">연구진흥단&#47;첨단의생명연구원</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">이대목동병원임상시험센터</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">연구대상자보호센터</a></li>
+					</ul>
+				</div>
+				
+				<div class="familySite dropDown">
+					<span><a href="javascript:void(0);"><em>패밀리사이트</em></a></span>
+					<ul class="related_inst">
+						<li><a href="https://www.eumc.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의료원</a></li>
+						<li><a href="https://www.eumc.ac.kr/fund/" title="새 창 열기" target="_blank">이화여자대학교 의료원 발전기금</a></li>
+						<li><a href="https://mokdong.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대목동병원</a></li>
+						<li><a href="https://seoul.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대서울병원</a></li>
+						<li><a href="https://wch.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대여성암병원</a></li>
+						<li><a href="http://www.ewha.ac.kr/mbs/ewhakr/index.jsp" title="새 창 열기" target="_blank">이화여자대학교</a></li>
+						<li><a href="http://www.ewhamed.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의과대학</a></li>
+						<li><a href="http://nursing.ewha.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 간호대학</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-btn">
+				<button class="btn-top" type="button" onclick="$Gb.activeFunc().goTop();"><em class="hidden_txt">상단으로 이동</em></button>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>이대목동병원 개방형실험실</title>
+
+	<script src="../static/js/jquery-3.3.1.min.js"></script>
+	<script src="../static/js/jquery-ui.min.js"></script>
+	<script src="../static/js/common.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../static/css/base.css"> <!-- reset -->
+	<link rel="stylesheet" type="text/css" href="../static/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" media="all and (max-width:1280px)" type="text/css" href="../static/css/mobile.css"> <!-- 반응형 -->
+</head>
+<body>
+	<!-- 건너띄기 링크 -->
+	<dl id="skipNavigation">
+		<dt class="hidden_txt">바로가기 및 건너띄기 링크</dt>
+		<dd><a href="#gnbList">주 메뉴 바로가기</a></dd>
+		<dd><a href="#wrapper">본문으로 바로가기</a></dd>
+	</dl>
+
+	<!-- 상단 -->
+	<header class="inner">
+		<hgroup class="h_top">
+			<div class="container">
+				<!-- 로고 영역 -->
+				<h1>
+					<a href="\">
+						<span class="hidden_txt">로고 이미지</span>
+						<img src="../static/img/logo.png" alt="이대목동병원 개방형실험실 로고 01" />
+					</a>
+				</h1>
+
+				<!-- Gnb pc-->
+				<nav class="gnb-web" id="gnbList">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- Gnb mobile-->
+				<a href="#allMenu" class="m-menu">
+					<i></i>
+					<i></i>
+					<i></i>
+					<em class="hidden_txt">모바일 전체메뉴</em>
+				</a>
+				<aside class="gnb-mob">
+					<div class="container">
+						<ul class="menu inner">
+							<li>
+								<a href="/about/greeting.html">사업단소개</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/about/greeting.html">인사말</a></li>
+										<li><a href="/about/introduce.html">소개</a></li>
+										<li><a href="/about/vision.html">사업추친전략</a></li>
+										<li><a href="/about/organization.html">조직도</a></li>
+										<li><a href="/about/location.html">오시는길</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/company/company.html">참여기업현황</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/research/exp.html">연구지원</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/research/exp.html">동물실험</a></li>
+										<li><a href="/research/corelab.html">코어랩 공용장비 현황</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/result/result.html">연구성과</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/jointResearch/jointResearch.html">공동연구회</a>
+								<div class="depth2"></div>
+							</li>
+							<li>
+								<a href="/notice/notice.html">정보광장</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/notice/notice.html">공지사항</a></li>
+										<li><a href="/notice/announcement.html">과제공고</a></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="/reservation/reservation_meeting_room.html">예약</a>
+								<div class="depth2">
+									<ul>
+										<li><a href="/reservation/reservation_meeting_room.html">회의실 예약</a></li>
+										<li><a href="/reservation/reservation_equipment.html">장비 예약</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<div class="gnb-bg"><em class="hidden_txt">백그라운드 영역</em></div>
+		</hgroup>
+	</header>
+
+	<!-- 본문 -->
+	<div id="wrapper" class="inner">
+		<div class="sub-top-bnr sub-top-bnr-05"><h2>참여기업현황</h2></div>
+		<div class="location">
+			<div class="container">
+				<a href="#" class="home"><em class="hidden_txt">홈 바로가기</em></a>
+				<div class="location-wrap">
+					<div class="dropDown" id="depth01">
+						<span><a href="javascript:void(0);">참여기업현황</a></span>
+						<ul class="cateList">
+							<li><a href="/about/greeting.html">사업단소개</a></li>
+							<li><a href="/company/company.html">참여기업현황</a></li>
+							<li><a href="/research/exp.html">연구지원</a></li>
+							<li><a href="/result/result.html">연구성과</a></li>
+							<li><a href="/jointResearch/jointResearch.html">공동연구회</a></li>
+							<li><a href="/notice/notice.html">정보광장</a></li>
+							<li><a href="/reservation/reservation_meeting_room.html">예약</a></li>
+						</ul>
+					</div>
+					<ul class="etc-link">
+						<li class="copy-link"><a href="javascript:void(0);" onclick="$Gb.activeFunc().copyUrl();"><em class="hidden_txt">링크 복사하기</em></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="contents company">
+				<h3>참여기업현황</h3>
+				<div>
+					<!-- Tab menu -->
+					<ul class="tab-menu tab-list-02">
+						<li><a href="#tab01" class="on">바이오(백신, 치료제)</a></li>
+						<li><a href="#tab02">의료기기(진단, 감염)</a></li>
+						<li><a href="#tab03">Untact Solition</a></li>
+						<li><a href="#tab04">기타</a></li>
+					</ul>
+					
+					<ul class="tab-contents tab-contents-type-02 inner">
+						<li id="tab01">
+							<ul>
+								<li class="thumNail-01">
+									<dl>
+										<dt>(주)엑솔런스바이오테크놀로지</dt>
+										<dd>
+											<div>엑소좀 기반 COVID-19 백신 및 치료제 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://www.exollence.com')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-02">
+									<dl>
+										<dt>(주)아이큐어비앤피</dt>
+										<dd>
+											<div>주사용 바이오의약품, 비강약물전달시스템 항암제,<br/> 펩타이드(비만, 당뇨 등) 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('https://icure.co.kr/BNP/index.html')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-03">
+									<dl>
+										<dt>주식회사 넥시온바이오텍</dt>
+										<dd>
+											<div>경구용 코로나바이러스 감염병 치료제 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://www.nexyonbio.com/main/main.php')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-04">
+									<dl>
+										<dt>주식회사 펩토이드</dt>
+										<dd>
+											<div>
+												내성발현을 최소화한 항염작용과 다제내성균 사멸의
+												이중기능을 가진 small molecule
+												mimicking peptides 개발(전임상 단계)
+											</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://www.peptoide.com/main')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-05">
+									<dl>
+										<dt>제노플랜코리아</dt>
+										<dd>
+											<div>고위험성 감염체유전자검사시약(항원진단키트) 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('https://www.genoplan.com/kr/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-06">
+									<dl>
+										<dt>주식회사 포스백스</dt>
+										<dd>
+											<div>9가 HPV 백신 개발, 알츠하이머 예방 백신 개발, 바이러스 유사입자 기반 항암제 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://www.posvax.com/kr/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+							</ul>	
+						</li>
+						<li id="tab02">
+							<ul>
+								<li class="thumNail-07">
+									<dl>
+										<dt>킹고바이오</dt>
+										<dd>
+											<div>질병 분자진단 농축기반 유전자 추출 키트 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://시료전처리시스템.kr/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-08">
+									<dl>
+										<dt>주식회사 엘티</dt>
+										<dd>
+											<div>환자용 셀프 비대 침대 업체 개발</div>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-09">
+									<dl>
+										<dt>대가파우더시스템</dt>
+										<dd>
+											<div>1..2um 바이러스 여과용 필터 수액세트 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://www.daega.co.kr/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-10">
+									<dl>
+										<dt>(주)씨지에스티앤에프</dt>
+										<dd>
+											<div>
+												항 바이러스 공기 필터 여과 및 
+												공조 기술 개발(전임상, 임상)
+											</div>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-11">
+									<dl>
+										<dt>바이오웨이브w</dt>
+										<dd>
+											<div>조산 및 피부 감염성질병 특 체외진단기기, 의약품 등 연구개발(전임상 단계)</div>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-12">
+									<dl>
+										<dt>㈜디씨메디컬</dt>
+										<dd>
+											<div>감염병을 진단할 수 있는 스마트 바이오 센서 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://www.dcmedical.co.kr/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-13">
+									<dl>
+										<dt>㈜ 엠비티</dt>
+										<dd>
+											<div>FO LSPR 바이오 센서를 이용한 결핵 혈청학적 항원 진단키트 개발</div>
+										</dd>
+									</dl>
+								</li>
+							</ul>	
+						</li>
+						<li id="tab03">
+							<ul>
+								<li class="thumNail-14">
+									<dl>
+										<dt>유엑스엔터프라이즈</dt>
+										<dd>
+											<div>
+												생체신호와 Covid 19 등 감염병 데이터를 결합하는 
+												빅데이터 인공지능(AI) 예측모델 기반의 
+												분석 대시 보드 시스템 개발
+											</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('https://yegenie.com/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-15">
+									<dl>
+										<dt>㈜마이체크업</dt>
+										<dd>
+											<div>감염병 자가격리자 모니터링 플랫폼 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('https://mycheckup.co.kr/main')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-16">
+									<dl>
+										<dt>㈜웨저</dt>
+										<dd>
+											<div>챗봇을 활용한<br/> 롱 Covid 19  증상 추적 조사 및 분석</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://weisure.co.kr/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-17">
+									<dl>
+										<dt>㈜디에이엘컴퍼니</dt>
+										<dd>
+											<div>생활패턴 기반 피임관리 및 성매개 감염병, 질환관리를 위한 AI코칭 플랫폼 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('http://dalchaebi.com/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+								<li class="thumNail-18">
+									<dl>
+										<dt>시너지에이아이</dt>
+										<dd>
+											<div>코로나 입원환자 대상 디지털 왕진시스템 개발</div>
+											<button type="button" class="btn-type-arrow wide" title="새 창 열기" onclick="javascript:window.open('https://www.synergyai.co/')"><em>홈페이지 바로가기</em></button>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+						<li id="tab04">
+							<ul>
+								<li class="thumNail-19">
+									<dl>
+										<dt>㈜동보바이오</dt>
+										<dd>
+											<div>Covid 19  예방을 위한 천연 광물질 이용 무독성 소독제 개발</div>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 하단 -->
+	<footer>
+		<div class="container">
+			<span class="logoFoot"><em class="hidden_txt">이대목동병원 개방형실험실</em><img src="../static/img/footer_logo.png" alt="이대목동병원 개방형실험실 로고 02"></span>
+			<address>
+				<ul>
+					<li>이대목동병원 감염병 특화 개방형실험실 사업단</li>
+					<li>Copyright© Ewha womans university medical center All rights reserved.</li>
+				</ul>
+			</address>
+			<!-- <div class="btn-privacy"><button type="button">개인정보 처리방침</button></div> -->
+			<div class="relatedSite">
+				<div class="dropDown">
+					<span><a href="javascript:void(0);"><em>연구기관</em></a></span>
+					<ul class="related_inst">
+						<li><a href="#" title="새 창 열기" target="_blank">연구진흥단&#47;첨단의생명연구원</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">이대목동병원임상시험센터</a></li>
+						<li><a href="#" title="새 창 열기" target="_blank">연구대상자보호센터</a></li>
+					</ul>
+				</div>
+				
+				<div class="familySite dropDown">
+					<span><a href="javascript:void(0);"><em>패밀리사이트</em></a></span>
+					<ul class="related_inst">
+						<li><a href="https://www.eumc.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의료원</a></li>
+						<li><a href="https://www.eumc.ac.kr/fund/" title="새 창 열기" target="_blank">이화여자대학교 의료원 발전기금</a></li>
+						<li><a href="https://mokdong.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대목동병원</a></li>
+						<li><a href="https://seoul.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대서울병원</a></li>
+						<li><a href="https://wch.eumc.ac.kr/main.do" title="새 창 열기" target="_blank">이대여성암병원</a></li>
+						<li><a href="http://www.ewha.ac.kr/mbs/ewhakr/index.jsp" title="새 창 열기" target="_blank">이화여자대학교</a></li>
+						<li><a href="http://www.ewhamed.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 의과대학</a></li>
+						<li><a href="http://nursing.ewha.ac.kr/" title="새 창 열기" target="_blank">이화여자대학교 간호대학</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-btn">
+				<button class="btn-top" type="button" onclick="$Gb.activeFunc().goTop();"><em class="hidden_txt">상단으로 이동</em></button>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
